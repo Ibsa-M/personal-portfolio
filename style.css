@@ -138,6 +138,14 @@ justify-content: center;
 animation: fadeUp 1.6s ease forwards;
 
 }
+
+#typing {
+
+font-weight: 600;
+font-size: 26px;
+
+}
+
 #typing::after {
 
 content: "|";
@@ -151,6 +159,7 @@ animation: blink 1s infinite;
 50% { opacity: 0; }
 
 }
+
 /* KEYFRAMES */
 
 @keyframes fadeDown {

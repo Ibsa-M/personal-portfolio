@@ -1,12 +1,6 @@
-// =========================
 // PORTFOLIO SCRIPT
-// =========================
 
-
-
-// =========================
 // DARK MODE (WITH SAVE)
-// =========================
 
 const darkToggle =
 document.getElementById("darkToggle");
@@ -36,10 +30,7 @@ localStorage.setItem("darkMode", "disabled");
 });
 
 
-
-// =========================
 // HAMBURGER MENU
-// =========================
 
 const hamburger =
 document.getElementById("hamburger");
@@ -54,10 +45,7 @@ navLinks.classList.toggle("active");
 });
 
 
-
-// =========================
 // CLOSE MENU AFTER CLICK
-// =========================
 
 document.querySelectorAll(".nav-links a")
 .forEach(link => {
@@ -71,20 +59,29 @@ navLinks.classList.remove("active");
 });
 
 
-
-// =========================
 // TYPING ANIMATION
+// RANDOM COLOR TYPING
 // =========================
 
 const words = [
 
-{text: "SOFTWARE ENGINEERING STUDENT"},
-{text: "PROGRAMMER", color: "#00c6ff"},
-{text: "DATA SCIENCE LEARNER",  color: "#28a745"},
-{text: "AI/ML ENTHUSIAST", color: "#ffc107"},
-{text: "AGENTIC AI", color:"rgba(237, 255, 221, 0.8)"},
-{text: "FULL-STACK WEB AND APP DEVELOPER", color: "#ff5733" },
-{text: "ALWAYS LEARNING NEW THINGS", color: "#eb55ff8f"}
+"PROGRAMMER",
+"DATA SCIENCE LEARNER",
+"AI/ML ENTHUSIAST",
+"AGENTIC AI",
+"FULL-STACK WEB & APP DEVELOPER",
+"ALWAYS LEARNING NEW THINGS"
+
+];
+
+const colors = [
+
+"#ffc107",
+"#00c6ff",
+"#28a745",
+"#ff5733",
+"#6f42c1",
+"#17a2b8"
 
 ];
 
@@ -98,14 +95,16 @@ document.getElementById("typing");
 function typeEffect() {
 
 const currentWord =
-words[wordIndex].text;
+words[wordIndex];
 
-const currentColor =
-words[wordIndex].color;
+const randomColor =
+colors[Math.floor(
+  Math.random()* colors.length
+)]
 
 // Apply color
 typingElement.style.color =
-currentColor;
+randomColor;
 
 if (isDeleting) {
 
@@ -154,10 +153,7 @@ isDeleting ? 50 : 100);
 
 typeEffect();
 
-
-// =========================
 // SMOOTH SCROLLING
-// =========================
 
 document.querySelectorAll("a[href^='#']")
 .forEach(anchor => {
@@ -179,10 +175,7 @@ behavior: "smooth"
 });
 
 
-
-// =========================
 // HERO FADE-IN ON LOAD
-// =========================
 
 window.addEventListener("load", () => {
 
@@ -200,10 +193,7 @@ heroText.style.transform =
 });
 
 
-
-// =========================
 // ACTIVE NAV LINK ON SCROLL
-// =========================
 
 const sections =
 document.querySelectorAll("section");

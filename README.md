@@ -65,13 +65,13 @@ Data analysis project evaluating cardiovascular health metrics.
 🔗 GitHub:  
 https://github.com/Ibsa-M/Cardio-Performance-Analysis-and-Titanic-Survival-Logic-Data-Set
 
-# 📸 Screenshots
+<!-- # 📸 Screenshots
 
 (Add screenshots here later)
 
 Example:
 
-![Portfolio Screenshot](images/portfolio-preview.png)
+![Portfolio Screenshot](images/portfolio-preview.png) -->
 
 # 📥 How to Run Locally
 
