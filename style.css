@@ -176,6 +176,26 @@ transform: translateY(0);
 }
 }
 
+
+/* Hero Animation Fix */
+
+.hero-text {
+
+opacity: 0;
+transform: translateY(40px);
+
+transition: 1s;
+
+}
+
+/* Active Navigation Link */
+
+.nav-links a.active {
+
+color: #00c6ff;
+
+}
+
 /* SKILLS */
 
 .skills-grid {
