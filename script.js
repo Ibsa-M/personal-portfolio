@@ -59,29 +59,18 @@ navLinks.classList.remove("active");
 });
 
 
-// TYPING ANIMATION
-// RANDOM COLOR TYPING
+// =========================
+// FIXED COLOR PER WORD
 // =========================
 
 const words = [
 
-"PROGRAMMER",
-"DATA SCIENCE LEARNER",
-"AI/ML ENTHUSIAST",
-"AGENTIC AI",
-"FULL-STACK WEB & APP DEVELOPER",
-"ALWAYS LEARNING NEW THINGS"
-
-];
-
-const colors = [
-
-"#ffc107",
-"#00c6ff",
-"#28a745",
-"#ff5733",
-"#6f42c1",
-"#17a2b8"
+{ text: "PROGRAMMER", color: "#ffc107" },      // Yellow
+{ text: "DATA SCIENCE LEARNER", color: "#b7ff00" }, // Blue
+{ text: "AI/ML ENTHUSIAST", color: "#a77228" }, // Green
+{ text: "AGENTIC AI", color: "#ffa733" }, // Orange
+{ text: "FULL-STACK WEB & APP DEVELOPER", color: "#6f42c1" }, // Purple
+{ text: "ALWAYS LEARNING NEW THINGS", color: "#b8174a" } // Cyan
 
 ];
 
@@ -95,16 +84,14 @@ document.getElementById("typing");
 function typeEffect() {
 
 const currentWord =
-words[wordIndex];
+words[wordIndex].text;
 
-const randomColor =
-colors[Math.floor(
-  Math.random()* colors.length
-)]
+const currentColor =
+words[wordIndex].color;
 
-// Apply color
+// Apply fixed color
 typingElement.style.color =
-randomColor;
+currentColor;
 
 if (isDeleting) {
 
@@ -119,7 +106,7 @@ charIndex++;
 typingElement.textContent =
 currentWord.substring(0, charIndex);
 
-// Word finished
+// When word finished
 if (!isDeleting &&
 charIndex === currentWord.length) {
 
@@ -131,7 +118,7 @@ return;
 
 }
 
-// Delete finished
+// When deleting finished
 if (isDeleting && charIndex === 0) {
 
 isDeleting = false;
@@ -146,8 +133,10 @@ wordIndex = 0;
 
 }
 
-setTimeout(typeEffect,
-isDeleting ? 50 : 100);
+setTimeout(
+typeEffect,
+isDeleting ? 50 : 100
+);
 
 }
 

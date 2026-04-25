@@ -8,6 +8,7 @@ body {
 
 font-family: 'Poppins', sans-serif;
 transition: 0.3s;
+padding: 10px ;
 
 }
 
@@ -159,6 +160,7 @@ animation: blink 1s infinite;
 50% { opacity: 0; }
 
 }
+
 
 /* KEYFRAMES */
 
@@ -357,4 +359,10 @@ text-decoration: underline;
 margin: 10px 0;
 font-size: 18px;
 
+}
+footer{
+  text-align: center;
+  font-weight: 900;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
