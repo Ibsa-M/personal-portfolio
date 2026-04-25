@@ -79,12 +79,12 @@ navLinks.classList.remove("active");
 const words = [
 
 {text: "SOFTWARE ENGINEERING STUDENT"},
-{text: "PROGRAMMER"},
-{text: "DATA SCIENCE LEARNER"},
-{text: "AI/ML ENTHUSIAST"},
-{text: "AGENTIC AI"},
-{text: "FULL-STACK WEB AND APP DEVELOPER",},
-{text: "ALWAYS LEARNING NEW THINGS"}
+{text: "PROGRAMMER", color: "#00c6ff"},
+{text: "DATA SCIENCE LEARNER",  color: "#28a745"},
+{text: "AI/ML ENTHUSIAST", color: "#ffc107"},
+{text: "AGENTIC AI", color:"rgba(237, 255, 221, 0.8)"},
+{text: "FULL-STACK WEB AND APP DEVELOPER", color: "#ff5733" },
+{text: "ALWAYS LEARNING NEW THINGS", color: "#eb55ff8f"}
 
 ];
 
