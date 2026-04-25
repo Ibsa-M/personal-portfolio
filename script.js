@@ -70,7 +70,7 @@ const words = [
 { text: "AI/ML ENTHUSIAST", color: "#a77228" }, // Green
 { text: "AGENTIC AI", color: "#ffa733" }, // Orange
 { text: "FULL-STACK WEB & APP DEVELOPER", color: "#6f42c1" }, // Purple
-{ text: "ALWAYS LEARNING NEW THINGS", color: "#b8174a" } // Cyan
+{ text: "ALWAYS LEARNING NEW THINGS", color: "#b817b3" } // Cyan
 
 ];
 
