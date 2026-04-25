@@ -1,95 +1,81 @@
-# 📋 Registration Form Project
+# 🌐 Personal Portfolio — Ibsa Magarsa Lamessa
 
-## 📌 Overview
+Welcome to my personal portfolio website!  
+This portfolio showcases my projects, technical skills, and experience in Software Engineering, Machine Learning, and Web Development.
 
-This project is a simple **Registration Form Web Application** built using:
+🔗 **Live Website:**  
+https://Ibsa-M.github.io/personal-portfolio/
 
-* HTML (Structure)
-* CSS (Styling)
-* JavaScript (Functionality)
+# 👨‍💻 About Me
 
-It allows users to enter personal details and displays the submitted information using JavaScript.
+Hi, I'm **Ibsa Magarsa Lamessa**,  
+a Software Engineering student passionate about:
 
-## 🚀 Features
+- Artificial Intelligence (AI)
+- Machine Learning (ML)
+- Full Stack Development
+- Data Science
+- Algorithm Design
 
-* User-friendly registration form
-* Input fields for:
+I enjoy solving real-world problems and building intelligent systems using modern technologies.
 
-  * First Name
-  * Last Name
-  * Department
-  * Gender selection (Radio buttons)
-  * Hobbies (Checkboxes)
-  * Additional notes (Textarea)
-* Form validation using JavaScript
-* Dynamic result display using alert
-* Clean and responsive UI design
+# 🛠️ Technologies Used
 
----
+This portfolio was built using:
 
-## 📁 Project Structure
+- **HTML5** — Structure
+- **CSS3** — Styling & Responsive Design
+- **JavaScript (Vanilla JS)** — Interactivity
+- **Git & GitHub** — Version Control
+- **GitHub Pages** — Hosting
 
-```
-project/
-│
-├── index.html        # Main HTML file
-├── css/
-│   └── style.css     # Styling file
-└── js/
-    └── script.js     # JavaScript logic
-```
+# ✨ Features
 
-## ⚙️ How to Run the Project
+- Responsive Design (Mobile Friendly)
+- Dark Mode Toggle
+- Typing Animation
+- Smooth Scrolling Navigation
+- Project Cards Layout
+- GitHub & LinkedIn Integration
+- Resume Download Button
 
-1. Download or clone the repository
-2. Open the project folder
-3. Double-click on `index.html`
-   OR open it using a browser
+# 📂 Featured Projects
 
-## 🧠 How It Works
+## 📊 Telco Churn Prediction
+Machine learning project predicting customer churn using telecom datasets.
 
-### 1. HTML
+🔗 GitHub:  
+https://github.com/Ibsa-M/Telco-Churn-Analysis-Dataset
 
-Defines the structure of the form.
+## 🌍 Countries App
+Web/mobile application displaying country information using APIs.
 
-### 2. CSS
+🔗 GitHub:  
+https://github.com/Ibsa-M/Countries-App-Mobile-
 
-Styles the layout using Flexbox and modern UI design.
+## 🚢 Titanic Survival Prediction
+Machine learning model predicting passenger survival using Titanic dataset.
 
-### 3. JavaScript
+🔗 GitHub:  
+https://github.com/Ibsa-M/Custom-and-Titanic-project
 
-Handles:
+## ❤️ Cardio Performance Analysis
+Data analysis project evaluating cardiovascular health metrics.
 
-* Input validation
-* Collecting user data
-* Displaying results dynamically
+🔗 GitHub:  
+https://github.com/Ibsa-M/Cardio-Performance-Analysis-and-Titanic-Survival-Logic-Data-Set
 
-## 🛠️ Technologies Used
+# 📸 Screenshots
 
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS) [added finally]
+(Add screenshots here later)
 
-## 📷 Preview
+Example:
 
-A clean registration form interface with input fields, selection options, and buttons.
+![Portfolio Screenshot](images/portfolio-preview.png)
 
-## ⚠️ Notes
+# 📥 How to Run Locally
 
-* This project is for learning purposes.
-* No backend/database is connected yet.
+Clone the repository:
 
-## 🚀 Future Improvements
-
-* Connect to PHP & MySQL database
-* Add advanced validation (email, phone)
-* Store user data permanently
-* Improve UI with animations
-
-## 👨‍💻 Author
-
-Developed as part of a web development lab assignment.
-
-## 📜 License
-
-This project is free to use for educational purposes.
+```bash
+git clone https://github.com/Ibsa-M/personal-portfolio.git

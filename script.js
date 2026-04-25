@@ -78,10 +78,13 @@ navLinks.classList.remove("active");
 
 const words = [
 
-"AI/ML Enthusiast",
-"Full Stack Developer",
-"Software Engineering Student",
-"Data Science Learner"
+{text: "SOFTWARE ENGINEERING STUDENT"},
+{text: "PROGRAMMER"},
+{text: "DATA SCIENCE LEARNER"},
+{text: "AI/ML ENTHUSIAST"},
+{text: "AGENTIC AI"},
+{text: "FULL-STACK WEB AND APP DEVELOPER",},
+{text: "ALWAYS LEARNING NEW THINGS"}
 
 ];
 
@@ -95,7 +98,14 @@ document.getElementById("typing");
 function typeEffect() {
 
 const currentWord =
-words[wordIndex];
+words[wordIndex].text;
+
+const currentColor =
+words[wordIndex].color;
+
+// Apply color
+typingElement.style.color =
+currentColor;
 
 if (isDeleting) {
 
@@ -110,7 +120,7 @@ charIndex++;
 typingElement.textContent =
 currentWord.substring(0, charIndex);
 
-// When word finished
+// Word finished
 if (!isDeleting &&
 charIndex === currentWord.length) {
 
@@ -122,7 +132,7 @@ return;
 
 }
 
-// When deleting finished
+// Delete finished
 if (isDeleting && charIndex === 0) {
 
 isDeleting = false;
@@ -142,9 +152,7 @@ isDeleting ? 50 : 100);
 
 }
 
-// Start typing
 typeEffect();
-
 
 
 // =========================
