@@ -89,7 +89,7 @@ color: "#28a745"
 },
 
 {
-text: "FULL-STACK DEVELOPER",
+text: "FULL-STACK WEB AND APP DEVELOPER",
 color: "#ff5733"
 },
 
