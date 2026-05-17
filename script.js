@@ -1,36 +1,44 @@
-// PORTFOLIO SCRIPT
+// =========================
+// script.js
+// =========================
 
-// DARK MODE (WITH SAVE)
+// DARK MODE
 
 const darkToggle =
 document.getElementById("darkToggle");
 
-// Load saved mode
-if (localStorage.getItem("darkMode") === "enabled") {
+if (localStorage.getItem("darkMode")
+=== "enabled") {
 
 document.body.classList.add("dark");
 
 }
 
-// Toggle dark mode
 darkToggle.addEventListener("click", () => {
 
 document.body.classList.toggle("dark");
 
 if (document.body.classList.contains("dark")) {
 
-localStorage.setItem("darkMode", "enabled");
+localStorage.setItem(
+"darkMode",
+"enabled"
+);
 
 } else {
 
-localStorage.setItem("darkMode", "disabled");
+localStorage.setItem(
+"darkMode",
+"disabled"
+);
 
 }
 
 });
 
-
+// =========================
 // HAMBURGER MENU
+// =========================
 
 const hamburger =
 document.getElementById("hamburger");
@@ -44,8 +52,9 @@ navLinks.classList.toggle("active");
 
 });
 
-
+// =========================
 // CLOSE MENU AFTER CLICK
+// =========================
 
 document.querySelectorAll(".nav-links a")
 .forEach(link => {
@@ -58,24 +67,42 @@ navLinks.classList.remove("active");
 
 });
 
-
 // =========================
-// FIXED COLOR PER WORD
+// TYPING EFFECT
 // =========================
 
 const words = [
 
-{ text: "PROGRAMMER", color: "#ffc107" },      // Yellow
-{ text: "DATA SCIENCE LEARNER", color: "#b7ff00" }, // Blue
-{ text: "AI/ML ENTHUSIAST", color: "#a77228" }, // Green
-{ text: "AGENTIC AI", color: "#ffa733" }, // Orange
-{ text: "FULL-STACK WEB & APP DEVELOPER", color: "#6f42c1" }, // Purple
-{ text: "ALWAYS LEARNING NEW THINGS", color: "#b817b3" } // Cyan
+{
+text: "PROGRAMMER",
+color: "#ffc107"
+},
+
+{
+text: "AI/ML ENTHUSIAST",
+color: "#00c6ff"
+},
+
+{
+text: "DATA SCIENCE LEARNER",
+color: "#28a745"
+},
+
+{
+text: "FULL-STACK DEVELOPER",
+color: "#ff5733"
+},
+
+{
+text: "AGENTIC AI",
+color: "#b817b3"
+}
 
 ];
 
 let wordIndex = 0;
 let charIndex = 0;
+
 let isDeleting = false;
 
 const typingElement =
@@ -89,7 +116,6 @@ words[wordIndex].text;
 const currentColor =
 words[wordIndex].color;
 
-// Apply fixed color
 typingElement.style.color =
 currentColor;
 
@@ -106,7 +132,6 @@ charIndex++;
 typingElement.textContent =
 currentWord.substring(0, charIndex);
 
-// When word finished
 if (!isDeleting &&
 charIndex === currentWord.length) {
 
@@ -118,8 +143,8 @@ return;
 
 }
 
-// When deleting finished
-if (isDeleting && charIndex === 0) {
+if (isDeleting &&
+charIndex === 0) {
 
 isDeleting = false;
 
@@ -142,47 +167,39 @@ isDeleting ? 50 : 100
 
 typeEffect();
 
-// SMOOTH SCROLLING
+// =========================
+// REVEAL ANIMATION
+// =========================
 
-document.querySelectorAll("a[href^='#']")
-.forEach(anchor => {
+const reveals =
+document.querySelectorAll(".reveal");
 
-anchor.addEventListener("click", function(e) {
+window.addEventListener("scroll", () => {
 
-e.preventDefault();
+reveals.forEach(element => {
 
-document.querySelector(
-this.getAttribute("href")
-).scrollIntoView({
+const windowHeight =
+window.innerHeight;
 
-behavior: "smooth"
+const revealTop =
+element.getBoundingClientRect().top;
 
-});
+const revealPoint = 100;
 
-});
+if (revealTop <
+windowHeight - revealPoint) {
 
-});
-
-
-// HERO FADE-IN ON LOAD
-
-window.addEventListener("load", () => {
-
-const heroText =
-document.querySelector(".hero-text");
-
-if (heroText) {
-
-heroText.style.opacity = "1";
-heroText.style.transform =
-"translateY(0)";
+element.classList.add("active");
 
 }
 
 });
 
+});
 
-// ACTIVE NAV LINK ON SCROLL
+// =========================
+// ACTIVE NAV LINK
+// =========================
 
 const sections =
 document.querySelectorAll("section");
@@ -197,11 +214,12 @@ let current = "";
 sections.forEach(section => {
 
 const sectionTop =
-section.offsetTop - 100;
+section.offsetTop - 150;
 
 if (scrollY >= sectionTop) {
 
-current = section.getAttribute("id");
+current =
+section.getAttribute("id");
 
 }
 

@@ -1,3 +1,7 @@
+<!-- ========================= -->
+<!-- index.html -->
+<!-- ========================= -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,25 +12,36 @@
 
     <title>Ibsa Magarsa Portfolio</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Fonts -->
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- DEV ICONS -->
     <link rel="stylesheet"
-href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/19eb38084a.js"
+        crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
+    <!-- ========================= -->
     <!-- NAVBAR -->
+    <!-- ========================= -->
 
     <header>
 
         <nav class="navbar">
 
-            <h2 class="logo">Ibsa</h2>
+            <h2 class="logo">
+                Ibsa
+            </h2>
 
             <ul class="nav-links" id="navLinks">
 
@@ -40,11 +55,13 @@ href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
             <div class="nav-buttons">
 
-                <button id="darkToggle">🌙</button>
+                <button id="darkToggle">
+                    🌙
+                </button>
 
                 <div class="hamburger" id="hamburger">
 
-                    ☰
+                    <i class="fa-solid fa-bars"></i>
 
                 </div>
 
@@ -54,172 +71,201 @@ href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     </header>
 
-    
-
+    <!-- ========================= -->
     <!-- HERO -->
+    <!-- ========================= -->
 
     <section id="home" class="hero">
-        <!-- PROFILE IMAGE -->
 
-<div class="hero-image">
+        <div class="hero-content">
 
-<img src="files/My_Photo.jpg"
-alt="Ibsa Profile Photo">
+            <div class="hero-image">
 
-</div>
+                <img src="files/My_Photo.jpg"
+                    alt="Ibsa Profile Photo">
 
-        <h1>Hi, I'm Ibsa Magarsa</h1>
+            </div>
 
-        <h2>
+            <h1>
 
-            <span id="typing"></span>
+                Hi, I'm
+                <span>Ibsa Magarsa</span>
 
-        </h2>
+            </h1>
 
-        <p>
-        <span id="typing"></span>
+            <h2>
 
-            Software Engineering Student.
+                <span id="typing"></span>
 
-        </p>
+            </h2>
 
-        <div class="hero-buttons">
+            <p class="hero-description">
 
-            <a href="files/Ibsa_Resume.pdf" download class="btn">
-                Download Resume
-            </a>
+                Motivated Software Engineering student passionate
+                about AI, Machine Learning, Data Science,
+                and Full-Stack Web and App Development, Artificial Intelligence and Agentic Systems.
 
-            <a href="https://github.com/Ibsa-M"
-            target="_blank"
-            rel="noopener noreferrer" 
-            class="btn-outline">
-                GitHub
-            </a>
+            </p>
 
-            <a href="https://www.linkedin.com/in/ibsa-magarsa-054b18367/" 
-            target="_blank"
-            rel="noopener noreferrer" 
-            class="btn-outline">
-                LinkedIn
-            </a>
+            <div class="hero-buttons">
+
+                <a href="files/Ibsa_Resume.pdf"
+                    download
+                    class="btn">
+
+                    Download Resume
+
+                </a>
+
+                <a href="https://github.com/Ibsa-M"
+                    target="_blank"
+                    class="btn-outline">
+
+                    GitHub
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/ibsa-magarsa-054b18367/"
+                    target="_blank"
+                    class="btn-outline">
+
+                    LinkedIn
+
+                </a>
+
+            </div>
 
         </div>
 
-        
-
     </section>
 
+    <!-- ========================= -->
     <!-- ABOUT -->
+    <!-- ========================= -->
 
-    <section id="about">
+    <section id="about" class="section reveal">
 
-        <h2>About Me</h2>
+        <h2 class="section-title">
+            About Me
+        </h2>
 
-        <p>
+        <p class="about-text">
 
-                I am a motivated Software Engineering student with
-                hands-on experience in Machine Learning,
-                Java application development, and Data Analysis.
+            I am a Software Engineering student with
+            hands-on experience in Machine Learning,
+            Java development, Data Analysis,
+            and modern Web Development.
 
-                I have built projects involving predictive modeling,
-                data visualization, and algorithm implementation
-                using tools such as Python, Java, and modern
-                web technologies.
+            I have built projects involving predictive
+            modeling, APIs, data visualization,
+            and intelligent systems using Python,
+            Java, JavaScript, and modern technologies.
 
-                My interests include Artificial Intelligence,
-                Agentic AI systems, Full-Stack Web Development,
-                and solving real-world problems through
-                software engineering.
-
-                I am passionate about continuously learning
-                new technologies and improving my ability
-                to design efficient, scalable, and user-friendly
-                applications.
+            I am passionate about Artificial Intelligence,
+            Agentic AI systems, and solving real-world
+            problems through software engineering.
 
         </p>
 
     </section>
 
+    <!-- ========================= -->
     <!-- SKILLS -->
+    <!-- ========================= -->
 
-    <section id="skills">
+    <section id="skills" class="section reveal">
 
-        <h2>Skills</h2>
+        <h2 class="section-title">
+            Skills
+        </h2>
 
         <div class="skills-grid">
 
-<div class="skill">
+            <div class="skill">
 
-<i class="devicon-python-plain colored"></i>
-<span>Python</span>
+                <i class="devicon-python-plain colored"></i>
 
-</div>
+                <span>Python</span>
 
-<div class="skill">
+            </div>
 
-<i class="devicon-java-plain colored"></i>
-<span>Java</span>
+            <div class="skill">
 
-</div>
+                <i class="devicon-java-plain colored"></i>
 
-<div class="skill">
+                <span>Java</span>
 
-<i class="devicon-cplusplus-plain colored"></i>
-<span>C++</span>
+            </div>
 
-</div>
+            <div class="skill">
 
-<div class="skill">
+                <i class="devicon-cplusplus-plain colored"></i>
 
-<i class="devicon-javascript-plain colored"></i>
-<span>JavaScript</span>
+                <span>C++</span>
 
-</div>
+            </div>
 
-<div class="skill">
+            <div class="skill">
 
-<i class="devicon-html5-plain colored"></i>
-<span>HTML</span>
+                <i class="devicon-javascript-plain colored"></i>
 
-</div>
+                <span>JavaScript</span>
 
-<div class="skill">
+            </div>
 
-<i class="devicon-css3-plain colored"></i>
-<span>CSS</span>
+            <div class="skill">
 
-</div>
+                <i class="devicon-html5-plain colored"></i>
 
-        <div class="skill">
+                <span>HTML</span>
 
-            <i class="devicon-git-plain colored"></i>
+            </div>
+
+            <div class="skill">
+
+                <i class="devicon-css3-plain colored"></i>
+
+                <span>CSS</span>
+
+            </div>
+
+            <div class="skill">
+
+                <i class="devicon-git-plain colored"></i>
+
                 <span>Git</span>
 
-                </div>
+            </div>
 
-                <div class="skill">
+            <div class="skill">
 
                 <i class="devicon-github-original"></i>
+
                 <span>GitHub</span>
 
-                </div>
+            </div>
 
-                <div class="skill">
+            <div class="skill">
 
                 <i class="devicon-php-plain colored"></i>
-                <span>php</span>
 
-                </div>
+                <span>PHP</span>
+
+            </div>
 
         </div>
 
     </section>
 
+    <!-- ========================= -->
     <!-- PROJECTS -->
+    <!-- ========================= -->
 
-    <section id="projects">
+    <section id="projects" class="section reveal">
 
-        <h2>Projects</h2>
+        <h2 class="section-title">
+            Projects
+        </h2>
 
         <div class="projects-grid">
 
@@ -228,11 +274,14 @@ alt="Ibsa Profile Photo">
                 <h3>Telco Churn Prediction</h3>
 
                 <p>
-                    Machine learning model predicting
+
+                    Machine Learning model predicting
                     customer churn using telecom data.
+
                 </p>
 
-                <a href="https://github.com/Ibsa-M/Telco-Churn-Analysis-Dataset">
+                <a href="https://github.com/Ibsa-M/Telco-Churn-Analysis-Dataset"
+                    target="_blank">
 
                     View Project →
 
@@ -245,11 +294,14 @@ alt="Ibsa Profile Photo">
                 <h3>Countries App</h3>
 
                 <p>
-                    Web/mobile application displaying
+
+                    Interactive application displaying
                     country information using APIs.
+
                 </p>
 
-                <a href="https://github.com/Ibsa-M/Countries-App-Mobile-">
+                <a href="https://github.com/Ibsa-M/Countries-App-Mobile-"
+                    target="_blank">
 
                     View Project →
 
@@ -259,14 +311,17 @@ alt="Ibsa Profile Photo">
 
             <div class="project-card">
 
-                <h3>Titanic Survival Prediction</h3>
+                <h3>Titanic Prediction</h3>
 
                 <p>
-                    Machine learning prediction project
-                    based on Titanic dataset.
+
+                    Predictive Machine Learning project
+                    using Titanic survival dataset.
+
                 </p>
 
-                <a href="https://github.com/Ibsa-M/Custom-and-Titanic-project">
+                <a href="https://github.com/Ibsa-M/Custom-and-Titanic-project"
+                    target="_blank">
 
                     View Project →
 
@@ -278,50 +333,58 @@ alt="Ibsa Profile Photo">
 
     </section>
 
+    <!-- ========================= -->
     <!-- CONTACT -->
+    <!-- ========================= -->
 
-    <section id="contact">
+    <section id="contact" class="section reveal">
 
-<h2>Contact Me</h2>
+        <h2 class="section-title">
+            Contact Me
+        </h2>
 
-<p>
-📧 Email: 
-<a href="mailto:magarsaibsa25@gmail.com">
-magarsaibsa25@gmail.com
-</a>
-</p>
+        <div class="contact-links">
 
-<p>
-🐙 GitHub:
-<a href="https://github.com/Ibsa-M"
-target="_blank"
-rel="noopener noreferrer">
+            <a href="mailto:magarsaibsa25@gmail.com">
 
-github.com/Ibsa-M
+                📧 Email
 
-</a>
-</p>
+            </a>
 
-<p>
-💼 LinkedIn:
-<a href="https://www.linkedin.com/in/ibsa-magarsa-054b18367/"
-target="_blank"
-rel="noopener noreferrer">
+            <a href="https://github.com/Ibsa-M"
+                target="_blank">
 
-linkedin.com/in/ibsa-magarsa
+                🐙 GitHub
 
-</a>
-</p>
+            </a>
 
-</section>
+            <a href="https://www.linkedin.com/in/ibsa-magarsa-054b18367/"
+                target="_blank">
+
+                💼 LinkedIn
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
     <footer>
 
-        <p>© 2026 Ibsa Magarsa</p>
+        <p>
+            © 2026 Ibsa Magarsa
+        </p>
 
     </footer>
 
+    <!-- JS -->
     <script src="script.js"></script>
 
 </body>
 
 </html>
+
